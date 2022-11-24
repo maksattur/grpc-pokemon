@@ -62,8 +62,6 @@ func (m *Pokemon) validate(all bool) error {
 
 	// no validation rules for Name
 
-	// no validation rules for Power
-
 	// no validation rules for Description
 
 	if len(errors) > 0 {
@@ -427,7 +425,7 @@ func (m *ReadPokemonRequest) validate(all bool) error {
 
 	var errors []error
 
-	// no validation rules for Pid
+	// no validation rules for Id
 
 	if len(errors) > 0 {
 		return ReadPokemonRequestMultiError(errors)
@@ -924,7 +922,7 @@ func (m *DeletePokemonRequest) validate(all bool) error {
 
 	var errors []error
 
-	// no validation rules for Pid
+	// no validation rules for Id
 
 	if len(errors) > 0 {
 		return DeletePokemonRequestMultiError(errors)
@@ -1028,7 +1026,7 @@ func (m *DeletePokemonResponse) validate(all bool) error {
 
 	var errors []error
 
-	// no validation rules for Pid
+	// no validation rules for Id
 
 	if len(errors) > 0 {
 		return DeletePokemonResponseMultiError(errors)

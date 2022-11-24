@@ -16,7 +16,7 @@ message Pokemon {
   string id = 1;
   string pid = 2;
   string name = 3;
-  string power = 4;
+  repeated string power = 4;
   string description = 5;
 }
 
@@ -29,7 +29,7 @@ message CreatePokemonResponse {
 }
 
 message ReadPokemonRequest {
-  string pid = 1;
+  string id = 1;
 }
 
 message ReadPokemonResponse {
@@ -45,11 +45,11 @@ message UpdatePokemonResponse {
 }
 
 message DeletePokemonRequest {
-  string pid = 1;
+  string id = 1;
 }
 
 message DeletePokemonResponse {
-  string pid = 1;
+  string id = 1;
 }
 
 message ListPokemonRequest {
